@@ -1,0 +1,106 @@
+<section class="w3l-top-header ">
+	<div class="container-fluid">
+		<div class="top-content-w3ls row">
+			<div class="top-headers col-lg-6">
+				<ul>
+					<li> <a href="#">Help Desk &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+							01412924501</a> </li>
+				</ul>
+			</div>
+			<div class="top-headers top-headers-2 col-lg-6">
+				<ul>
+					<li><a href="#">Skip To Content </a></li>
+					<li><a href="#">Change Text Size or Colour</a></li>
+					<li>
+						<!-- search button -->
+						<div class="search-right">
+							<form action="#search" method="GET" class="search-box position-relative">
+								<div class="input-search">
+									<input type="search" placeholder="Enter Keyword" name="search" required="required"
+										autofocus="" class="search-popup" />
+								</div>
+								<button type="submit" class="btn search-btn"></button>
+							</form>
+						</div>
+						<!-- //search button -->
+					</li>
+					<li style="width: 40px;">
+						<div class="dropdown"> <span>EN</span>
+							<div class="dropdown-content p-1">
+								<p class="border-bottom m-0"><a class="text-black">Hindi</a>
+								</p>
+								<p class="m-0"><a class="text-black">English</a></p>
+							</div>
+						</div>
+					</li>
+					<li style="width: 40px;">
+						<a class="font-button plus">A+</a>
+					</li>
+					<li>
+						<p (click)="resetFont()">A</p>
+					</li>
+					<li>
+						<a class="font-button minus">A-</a>
+					</li>
+					<!-- @author animesh - @change Description - title changed to logout from login  -->
+					<li class="gradient-bg"><a role="button" title="Logout" (click)="logOut()">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ======= Header ======= -->
+<div class="header">
+	<div class="container-fluid ">
+		<div class="row p-0 p-2" id="navigation">
+			<div class="col-8">
+				<div class="logo">
+					<!-- <h1 class="text-white">
+						<span class="logo-sz"><img src="assets/maine-css/img/logo.png" alt="" class="img-fluid"
+								style="margin:0px 10px 10px;height: 70px;"></span>
+						<span class="d-flex">Department of Finance</span>
+						<span>
+							<p>Integrated Financial Managment System</p>
+						</span>
+					</h1> -->
+
+				</div>
+				<img src="assets/maine-css/img/logo1.png" alt="" class="img-fluid">
+			</div>
+			<div class="col-4">
+				<div id="mySidenav" class="sidenav"> <a class="closebtn" onclick="closeNav()">&times;</a>
+					<li><a class="nav-link scrollto active" href="manual.html">Manual</a></li>
+					<li><a class="nav-link scrollto" href="faq.html"> FAQ</a></li>
+					<li><a class="nav-link scrollto" href="helpdesk.html"> Helpdesk </a></li>
+				</div>
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="manual.html">Manual</a></li>
+						<li><a class="nav-link scrollto" href="faq.html"> FAQ</a></li>
+						<li><a class="nav-link scrollto" href="helpdesk.html"> Helpdesk </a></li>
+					</ul>
+				</nav> <span class="button-croce" style="font-size:30px;cursor:pointer"
+					onclick="openNav()">&#9776;</span>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<!-- End Header -->
+<section class="hero">
+	<div class="container-fluid ">
+		<div class="row m-2">
+
+			<app-user-info-header [officeName]="officeName" [role]="currentRole" [userName]="loggedInUserName">
+			</app-user-info-header>
+		</div>
+	</div>
+</section>
+
+
+<div class="icon-bar d-none">
+	<a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+	<a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+	<a href="#youtube" class="youtube"><span class="fa fa-youtube"></span></a>
+	<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+</div>
